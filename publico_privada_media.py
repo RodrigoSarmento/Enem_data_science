@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 
-CHUNKSIZE=1000000
+CHUNKSIZE=10000
 
 df = pd.read_csv('MICRODADOS_ENEM_2013.csv', parse_dates=True,encoding='latin-1',sep=';',nrows=CHUNKSIZE)
 df = df[['ID_DEPENDENCIA_ADM_ESC','NOTA_CN','NOTA_CH','NOTA_LC','NOTA_MT','NU_NOTA_REDACAO','UF_ESC']]
